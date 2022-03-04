@@ -1,0 +1,33 @@
+#RiseOfMedicalText{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #333333;
+    margin-top: 40px;
+    text-align: center;
+}
+#RiseofMedical_Tagline{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+    margin: 20px 5px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media only screen and (max-width: 775px) {
+    #RiseOfMedicalText{
+        font-size: 26px;
+    }
+    #RiseofMedical_Tagline{
+        width: 90%;
+    }
+}

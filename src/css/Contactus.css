@@ -1,0 +1,66 @@
+#SendMessageText{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+#ContactusForm{
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    width: 55%;
+    /* height: 420px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#ContactUsBoxes{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    width: 60%;
+    /* min-width: 240px; */
+}
+#ContactUsBoxes_Label{
+    width: 40%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /* line-height: 22px; */
+    color: #000000;
+}
+#ContactUs_ImgBox{
+    width: 45%;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    #ContactUs_ImgBox{
+        display: none;
+    }
+    #ContactusForm{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 470px) {
+    #ContactUsBoxes_Label{
+        width: 100%;
+    }
+    #ContactUsBoxes{
+        width: 100%;
+    }
+}
