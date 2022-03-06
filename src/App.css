@@ -1,5 +1,8 @@
+*{
+  font-family: Poppins !important;
+}
 #headerTitle{
-  font-family: Poppins;
+  font-family: Poppins !important;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -12,6 +15,16 @@ Navbar{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   height: 70px;
   background: #FFFFFF;
+}
+#basic-navbar-nav{
+  width: 82%;
+  background: white;
+  padding: 20px;
+  margin: 0px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 80px;
+  border-radius: 5px;
 }
 #Links{
   font-family: Poppins;
@@ -61,7 +74,7 @@ Navbar{
   display: none;
 }
 #paragraphStyle{
-  font-family: Poppins;
+  font-family: Poppins !important;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
@@ -86,7 +99,7 @@ Navbar{
   align-items: center;
 }
 #footerText{
-  font-family: Poppins;
+  font-family: Poppins !important;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -96,9 +109,6 @@ Navbar{
   color: #FFFFFF;
 }
 
-.fade-in-image {
- 
-}
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}

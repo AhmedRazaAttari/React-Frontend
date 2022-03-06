@@ -4,9 +4,34 @@ import logo from '../assets/logo.png';
 import { Link, useHistory } from 'react-router-dom';
 
 export default class navbar extends Component {
+
+    constructor() {
+        super();
+
+        this.state = {
+            expanded: false
+        }
+    }
+
+    componentDidMount(){
+        document.getElementById("root").style.background = "white";
+    }
+
+    setToggle = () => {
+        this.setState({
+            expanded: !this.state.expanded
+        })
+        if (this.state.expanded) {
+            document.getElementById("root").style.background = "white";
+        }
+        else{
+            document.getElementById("root").style.background = "rgba(247, 241, 241, 0.9)";
+        }
+    }
+
     render() {
         return (
-            <Navbar expand="lg">
+            <Navbar expand="lg" onToggle={this.setToggle}>
                 <Container>
                     <Navbar.Brand><img src={logo} style={{ width: 50, height: 50 }} /><span id='headerTitle'>Spirit of Truth Native American Church</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
